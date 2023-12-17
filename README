@@ -1,0 +1,30 @@
+Requisitos
+Asegúrate de tener Node.js y npm instalados en tu máquina.
+
+Node.js: Descargar e instalar Node.js
+npm: Normalmente, se instala automáticamente con Node.js
+Instalación
+Clona este repositorio:
+    git clone https://github.com/DavidCG5/libreta-de-contactos.git
+
+Navega al directorio del backend:
+    cd libreta-de-contactos-backend
+
+Instala las dependencias:
+    npm install
+
+Iniciar el Servidor
+Ejecuta el siguiente comando para iniciar el servidor:
+    npm start
+
+El servidor estará en funcionamiento en http://localhost:3000. Asegúrate de que ningún otro servicio esté utilizando el puerto 3000.
+
+
+API
+La API proporciona los siguientes endpoints:
+
+GET /contactos: Obtiene la lista de contactos.
+GET /contactos/:id: Obtiene un contacto por su ID.
+POST /contactos: Crea un nuevo contacto.
+PUT /contactos/:id: Actualiza un contacto existente.
+DELETE /contactos/:id: Elimina un contacto.

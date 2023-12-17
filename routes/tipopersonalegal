@@ -1,0 +1,12 @@
+// backend/routes/tipopersonalegal.js
+const express = require('express');
+const router = express.Router();
+const tipoPersonaLegalController = require('../controllers/tipoPersonaLegalController');
+
+router.get('/tipopersonalegal', tipoPersonaLegalController.getAllLegalPersonTypes);
+router.get('/tipopersonalegal/:id', tipoPersonaLegalController.getLegalPersonTypeById);
+router.post('/tipopersonalegal', tipoPersonaLegalController.createLegalPersonType);
+router.put('/tipopersonalegal/:id', tipoPersonaLegalController.updateLegalPersonType);
+router.delete('/tipopersonalegal/:id', tipoPersonaLegalController.deleteLegalPersonType);
+
+module.exports = router;
